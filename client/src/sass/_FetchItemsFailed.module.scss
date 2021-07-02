@@ -1,0 +1,19 @@
+@import 'variables';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $clr-grey;
+    
+    svg{
+        font-size: 4rem;
+        margin: 2rem auto;
+    }
+    
+    span{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

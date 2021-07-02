@@ -1,0 +1,97 @@
+@import "./variables";
+
+.navContainer {
+    width: 100vw;
+    padding: 1rem 2rem;
+    background-color: $clr-nav-bg;
+    position: relative;
+}
+
+.navListContainer {
+    font-weight: $font-weight-regular;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-out;
+    background-color: $clr-nav-bg;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    display: block;
+    list-style: none;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: $clr-grey;
+        transition: color 0.3s ease-out;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &.active {
+        transform: scale(1, 1);
+    }
+}
+
+.logo {
+    width: 83px;
+    height: 72px;
+}
+
+.logoBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bars {
+    font-size: 2rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: grey;
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (min-width: $break-large) {
+    .navContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .bars {
+        display: none;
+    }
+
+    .navListContainer {
+        transform: scale(1);
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 0;
+
+        a{
+            margin-left: 1rem;
+        }
+    }
+
+    .logoBarContainer{
+        display: block;
+
+    }
+}

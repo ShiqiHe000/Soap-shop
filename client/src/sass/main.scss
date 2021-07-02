@@ -1,0 +1,40 @@
+@import "./variables";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: $clr-bg;
+    font-family: $font-text;
+    font-weight: 300;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.price{
+    font-size: 1.5rem;
+    font-weight: $font-weight-bold;
+}
+
+.loading-spinner{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (min-width: $break-large) {
+
+    .container{
+        max-width: 1000px;
+    }
+}

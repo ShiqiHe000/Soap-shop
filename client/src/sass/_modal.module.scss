@@ -1,0 +1,157 @@
+@import "variables";
+
+$btn-size: 45px;
+
+.modalContainer {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    background-color: $clr-bg;
+    z-index: 20;
+    border: 2px solid $clr-nav-bg;
+    box-shadow: 0 0 15px $clr-bubble-dark-green;
+    transform: translateX(100%);
+
+    transition: transform 0.3s ease-out;
+
+    &.active {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.title {
+    padding: 1rem;
+    text-align: center;
+    background-color: $clr-nav-bg;
+    font-size: 1.5rem;
+    font-weight: $font-weight-regular;
+    position: relative;
+}
+
+.closeBtn {
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+        transform: translateY(-50%) scale(1.1);
+    }
+}
+
+.modalBody {
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.item {
+    padding: 1rem;
+    border-bottom: 1px solid $clr-bubble-grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+
+    .rightPart {
+        max-width: 70%;
+    }
+
+    .rightPart > * {
+        margin-left: 1rem;
+    }
+
+    .itemName {
+        font-weight: $font-weight-regular;
+        max-width: 50%;
+        word-wrap: break-word;
+    }
+
+    .itemPrice {
+        font-weight: $font-weight-bold;
+    }
+
+    .btn {
+        outline: none;
+        border: none;
+        background: none;
+        padding: 0.5rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+
+        transition: transform 0.2s ease-out;
+
+        &:active {
+            transform: scale(1.05);
+        }
+    }
+
+
+
+    .itemBtn {
+        background-color: $clr-bubble-green;
+        height: $btn-size;
+        min-width: $btn-size;
+        border: 2px solid $clr-nav-bg;
+        font-family: inherit;
+
+        transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+
+        &:hover {
+            background-color: darken($color: $clr-bubble-green, $amount: 10%);
+        }
+    }
+
+}
+
+
+.inputQuantity {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    width: 30px;
+    font-size: inherit;
+    background-color: $clr-bubble-green;
+    border: 2px solid $clr-nav-bg;
+    height: $btn-size;
+    min-width: $btn-size;
+    text-align: center;
+}
+
+.inputField{
+    display: flex;
+    align-items: center;
+
+}
+
+.inputGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+
+@media screen and (min-width: $break-large){
+    .modalContainer {
+        width: 500px;
+        right: 0;
+        left: auto;
+    }
+} 
+

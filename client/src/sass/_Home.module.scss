@@ -1,0 +1,62 @@
+@import './variables';
+
+.canvas{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.title {
+    font-family: $font-title;
+    font-size: 2.5rem;
+    text-shadow: 0 0 3px $clr-bubble-rose;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    font-weight: $font-weight-light;
+    width: 60%;
+    font-weight: $font-weight-regular;
+    margin-top: 0;
+}
+
+.arrowIcon{
+    margin-right: 1rem;
+    animation: arrowMove 1s linear infinite;
+}
+
+@media only screen and (min-width: $break-large){
+.title {
+    font-size: 5rem;
+}
+
+.subtitle{
+    font-size: 2rem;
+}
+.buyButton{
+    font-size: 2rem;
+    padding: 2rem 2.5rem;
+    border-width: 12px;
+}
+}
+
+@keyframes arrowMove {
+    0%{
+        transform: translateX(-5px);
+        opacity: 0.2;
+    }
+    50%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(5px);
+        opacity: 0.2;
+
+    }
+}

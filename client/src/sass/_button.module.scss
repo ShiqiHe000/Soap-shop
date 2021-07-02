@@ -1,0 +1,126 @@
+@import "variables";
+
+.btn {
+    border-radius: 100vw;
+    outline: none;
+    border: none;
+    background: none;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+    padding: 1rem 2rem;
+    display: block;
+}
+
+.btnPrimary {
+    background: $clr-bubble-rose;
+    border: 5px solid $clr-bubble-dark-green;
+    transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+
+    &:hover {
+        background-color: lighten($clr-bubble-rose, $amount: 10%);
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
+.btnSecondary {
+    background: $clr-bubble-green;
+    transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+
+    &:hover {
+        background-color: darken($clr-bubble-green, $amount: 10%);
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
+.btnBlock {
+    display: block;
+    width: 100%;
+}
+
+.succeededInfo {
+    position: relative;
+
+    .success {
+        position: absolute;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        top: 0;
+        background-color: $clr-bubble-rose;
+        border-radius: 100vw;
+        transform: scale(0);
+    }
+
+    .failed {
+        position: absolute;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        top: 0;
+        left: 50%;
+        background-color: $clr-bubble-grey;
+        border-radius: 100vw;
+        transform: scale(0);
+    }
+}
+
+.btnGroupPosition {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.priceAndQuantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem 0;
+}
+
+.btnGroupContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+
+    span {
+        margin: 0 1rem;
+    }
+}
+
+.btnGroup {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    height: $btn-size;
+    min-width: $btn-size;
+    border: 2px solid $clr-bubble-grey;
+    font-family: inherit;
+    font-weight: $font-weight-bold;
+
+    transition: transform 0.2s ease-out;
+
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (min-width: $break-large) {
+    .btnBlock {
+        display: inline-block;
+        width: auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .btnGroupPosition {
+        justify-content: flex-start;
+    }
+}

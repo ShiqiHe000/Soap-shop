@@ -1,0 +1,11 @@
+@import 'variables';
+
+.container {
+    margin-left: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: $clr-bubble-grey;
+    padding: .5rem 1rem;
+    border-radius: 100vw;
+}
