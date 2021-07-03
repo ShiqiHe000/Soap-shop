@@ -3,4 +3,12 @@ An online soap shop using MERN stack (MongoDB, Express, React, Node)
 
 ## Front-end
 * Framework: React. 
-* User interaction: 
+* User interaction: HTML canvas. 
+* Animation: GSAP. 
+
+## Back-end
+* Framework: Node.js, Express. 
+* Database: MongoBD. 
+* REASful API. 
+
+
