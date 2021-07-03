@@ -8,7 +8,6 @@ $face-img-width-max: 700px;
 .faceImgContainer {
     width: 100%;
     max-width: $face-img-width-max;
-    height: calc(width / $face-img-ratio);
     margin: 2rem auto;
     position: relative;
 }
