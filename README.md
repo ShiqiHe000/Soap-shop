@@ -11,4 +11,7 @@ An online soap shop using MERN stack (MongoDB, Express, React, Node)
 * Database: MongoBD. 
 * REASful API. 
 
+## Have a look!
+[here](https://soap-shop000.herokuapp.com)
+
 
