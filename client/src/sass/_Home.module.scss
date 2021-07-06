@@ -1,6 +1,6 @@
-@import './variables';
+@import "./variables";
 
-.canvas{
+.canvas {
     display: block;
     position: absolute;
     top: 0;
@@ -11,6 +11,14 @@
     pointer-events: none;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 90vh;
+}
+
 .title {
     font-family: $font-title;
     font-size: 2.5rem;
@@ -18,45 +26,51 @@
     margin-bottom: 1rem;
 }
 
-.subtitle{
+.subtitle {
     font-weight: $font-weight-light;
     width: 60%;
     font-weight: $font-weight-regular;
     margin-top: 0;
 }
 
-.arrowIcon{
+.arrowIcon {
     margin-right: 1rem;
     animation: arrowMove 1s linear infinite;
 }
 
-@media only screen and (min-width: $break-large){
-.title {
-    font-size: 5rem;
+.buyButton {
+    text-decoration: none;
 }
 
-.subtitle{
-    font-size: 2rem;
-}
-.buyButton{
-    font-size: 2rem;
-    padding: 2rem 2.5rem;
-    border-width: 12px;
-}
+@media only screen and (min-width: $break-large) {
+    .title {
+        font-size: 5rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+    .buyButton {
+        font-size: 2rem;
+        padding: 2rem 2.5rem;
+        border-width: 12px;
+        display: inline-block;
+        flex-basis: 0;
+        flex-grow: 0;
+    }
 }
 
 @keyframes arrowMove {
-    0%{
+    0% {
         transform: translateX(-5px);
         opacity: 0.2;
     }
-    50%{
+    50% {
         transform: translateX(0);
         opacity: 1;
     }
-    100%{
+    100% {
         transform: translateX(5px);
         opacity: 0.2;
-
     }
 }

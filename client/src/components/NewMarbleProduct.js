@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import newProduct1 from "../imgs/soap-new-1.jpg";
 import styles from "../sass/_NewProducts.module.scss";
 import PriceAndQuantity from "./PriceAndQuantity";
-import { frameAnimationGoDown } from "./frameAnimation";
+import { frameAnimationGoDown } from "../js/frameAnimation";
 
 const NewMarbleProduct = () => {
     useEffect(() => {

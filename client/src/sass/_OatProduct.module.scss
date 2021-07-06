@@ -11,7 +11,6 @@ $women-width-large: 300px;
 .gradiantBg {
     padding-bottom: 3rem;
     position: relative;
-
     &::before {
         content: "";
         position: absolute;
@@ -31,8 +30,8 @@ $women-width-large: 300px;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     width: 100%;
-}
 
+}
 
 .oatSoapImg {
     width: $oat-soap-width;
@@ -61,7 +60,6 @@ $women-width-large: 300px;
     }
 
     .oatSoapImg {
-     
         transform: translateY(0);
         max-width: 670px;
         max-height: 670px / $oat-soap-ratio;
@@ -82,7 +80,7 @@ $women-width-large: 300px;
         justify-self: flex-end;
     }
 
-    .descriptionPlace{
+    .descriptionPlace {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         width: 500px;

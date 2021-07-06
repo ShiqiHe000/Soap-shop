@@ -8,6 +8,7 @@ import NotMatch from "./components/NotMatch";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import BestSellers from "./components/BestSellers";
+import AboutUs from "./components/AboutUs";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,9 @@ function App() {
                         </Route>
                         <Route exact path="/bestSellers">
                             <BestSellers />
+                        </Route>
+                        <Route exact path="/aboutUs">
+                            <AboutUs />
                         </Route>
                         <Route path="*">
                             <NotMatch />

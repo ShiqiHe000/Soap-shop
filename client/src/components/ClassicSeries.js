@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styles from "../sass/_NewProducts.module.scss";
 import PriceAndQuantity from "./PriceAndQuantity";
 import classicSoap from "../imgs/classic-soap.jpg";
-import { frameAnimationGoUp } from "./frameAnimation";
+import { frameAnimationGoUp } from "../js/frameAnimation";
 
 const ClassicSeries = () => {
     useEffect(() => {

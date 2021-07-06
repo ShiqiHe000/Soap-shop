@@ -9,13 +9,13 @@ window.addEventListener("mousemove", (event) => {
 });
 
 export default class BubbleLandingPage {
-    constructor() {
+    constructor(number) {
         this.canvas = document.getElementById("canvas");
         this.canvas.width = document.documentElement.scrollWidth;
         this.canvas.height = document.documentElement.scrollHeight;
         this.context = this.canvas.getContext("2d");
         this.circleArray = [];
-        this.circleNumber = 400;
+        this.circleNumber = number;
         this.resizeWindow();
         this.initCanvas();
         this.animate();

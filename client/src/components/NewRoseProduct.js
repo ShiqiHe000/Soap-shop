@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styles from "../sass/_NewProducts.module.scss";
 import PriceAndQuantity from "./PriceAndQuantity";
 import roseSoap from "../imgs/pink-soap.jpg";
-import { backgroundShift } from "./frameAnimation";
+import { backgroundShift } from "../js/frameAnimation";
 
 const NewRoseProduct = () => {
     useEffect(() => {

@@ -9,10 +9,10 @@ const BestSellers = () => {
     const bubbleImg = useRef();
     const subTitle = useRef();
     const title = useRef();
+    const faceImg = useRef();
 
     useEffect(() => {
-        // console.log(subTitle.current);
-        showTitles(subTitle.current, title.current, bubbleImg.current);
+        showTitles(subTitle.current, title.current, bubbleImg.current, faceImg.current);
 
         imgMove(bubbleImg.current);
     }, []);
@@ -28,6 +28,7 @@ const BestSellers = () => {
                         src={face}
                         alt="washes face"
                         className={styles.washFaceImg}
+                        ref={faceImg}
                     />
                     <h2 className={styles.subtitle} ref={subTitle}>
                         It’s not Just Soap.
