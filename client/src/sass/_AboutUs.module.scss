@@ -1,7 +1,8 @@
 @import "variables";
 
 $clr-dirtRed: #b16448;
-$img-max-width: 800px;
+$clr-purple: #83528B;
+$img-max-width: 500px;
 
 .wholePage {
     position: relative;
@@ -23,17 +24,20 @@ $img-max-width: 800px;
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1 / 2;
-    isolation: isolate;
     margin-bottom: 2rem;
 }
 
 .title {
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 10%;
-    mix-blend-mode: difference;
     color: white;
     text-transform: uppercase;
+    background-color: $clr-purple;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 27% 73% 35% 65% / 53% 21% 79% 47% ;
+    box-shadow: 2px 2px 3px 2px rgba($color: black, $alpha: .6);
 }
 
 .textContainer {
@@ -71,10 +75,13 @@ $img-max-width: 800px;
         grid-column: 2 / 3;
         align-self: center;
         mix-blend-mode: difference;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .title {
-        font-size: 4rem;
+        font-size: 3.5rem;
+        top: 10%;
+        right: 20%;
+        width: 100%;
     }
 }
